@@ -32,6 +32,7 @@ public class UserController {
     @RequestMapping("/getAllUser")
     @ResponseBody
     public List<User> getAllUser() {
+        System.out.println("拉取了修改的代码")
         List<User> allUser = userService.getAllUser();
         return allUser;
     }
